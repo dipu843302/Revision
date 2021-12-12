@@ -2,7 +2,7 @@ package Kotlin
 
 fun main(){
 val day=Day.Monday
-    println(day)
+   // println(day)
 
     day.printDay()
 }

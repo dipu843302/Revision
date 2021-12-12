@@ -6,10 +6,14 @@ object Single{
             println(a-b)
         }
         fun addition(a:Int,b:Int){
-            println(a+b)
-        }
+        println(a+b)
+    }
+    init {
+        println("Hello")
+    }
 }
 fun main(){
     Single.sub(14,5)
-    Single.addition(15,20)
+  Single.addition(15,20)
+
 }
