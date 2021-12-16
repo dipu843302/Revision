@@ -3,6 +3,7 @@ package Kotlin
 
 fun main(){
     var employee=Employee()
+
 // ******** apply *******
 
     //Normal initialize
@@ -10,7 +11,7 @@ fun main(){
     employee.name="Ram"
 
     // Use apply
-    employee.apply {
+ var ans =employee.apply {
         age=22
         name="Ram"
     }

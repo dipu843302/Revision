@@ -9,5 +9,6 @@ class JVM{
     }
 }
 fun main(){
+
     println(Static.Name())
 }

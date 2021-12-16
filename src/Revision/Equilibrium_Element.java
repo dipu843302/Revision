@@ -4,36 +4,36 @@ import java.util.Scanner;
 
 public class Equilibrium_Element {
     public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
-        int n=scanner.nextInt();
-        int arr[]=new int[n];
-        for (int i=0;i<n;i++){
-            arr[i]=scanner.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int arr[] = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
         }
+        int l = 0;
+        int r = n - 1;
+        int m = (l + r) / 2;
 
-        int l_Sum=0;
-        int sum=0;
-        int ans=0;
-        for (int i=0;i<n;i++){
-            sum+=arr[i];
-        }
-       boolean bln=false;
+        int left = 0;
+        int right = 0;
+        while (l <= m && m <= r) {
 
-        for (int i=0;i<n;i++){
-            sum-=arr[i];
-            if (sum==l_Sum){
-                ans=i+1;
-                bln=true;
-                break;
+            while (l < m && m < r) {
+                left += arr[l];
+                right += arr[r];
+                left++;
+                right--;
             }
-            l_Sum+=arr[i];
-
-        }
-        if (bln){
-            System.out.println(ans);
-
-        }else {
-            System.out.println(-1);
+            if (left == right) {
+                System.out.println(m);
+                break;
+            } else if (left < right) {
+                m++;
+            } else {
+                m--;
+            }
         }
     }
+
+
 }
