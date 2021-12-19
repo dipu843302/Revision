@@ -5,6 +5,10 @@ abstract class abstract_class {
     abstract void start();
    abstract void light();
 
+    public void Break() {
+
+    }
+
     public static void main(String[] args) {
         abstract_class a= new abstract_class() {
             @Override

@@ -12,11 +12,10 @@ fun main(){
     println(sub)
 }
 
-fun Int.greaterValue(other:Int): Int {
-  if (this>other)
+fun Int.greaterValue(y:Int): Int {
+  if (this>y)
       return this
-
-    return other
+    return y
 }
 
 fun String.formateString():String{
