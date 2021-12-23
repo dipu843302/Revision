@@ -1,5 +1,6 @@
 package Revision;
 
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Nikhil_and_his_Search {
@@ -33,5 +34,6 @@ public class Nikhil_and_his_Search {
                 System.out.println(count);
             }
         }
+
     }
 }
