@@ -26,9 +26,9 @@ public class DetectPalindromeII {
                 }
             }
             if (coutn>1){
-                System.out.println("Not possible");
+                System.out.println("Not Possible!");
             }else {
-                System.out.println("Possible");
+                System.out.println("Possible!");
             }
         }
     }
