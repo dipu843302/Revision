@@ -2,7 +2,7 @@ package Kotlin
 
 
 fun main(){
-    var employee=Employee()
+    val employee=Employee()
 
 // ******** apply *******
 

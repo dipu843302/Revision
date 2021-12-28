@@ -4,8 +4,12 @@ public class Incapsulation {
     private int age;
     private String name;
 
-    public int getAge() {
-        return age;
+    public void getAge(int i) {
+       if (age>20){
+           System.out.println("You are too old");
+       }else {
+           System.out.println("correct");
+       }
     }
 
     public void setAge(int age) {
@@ -22,7 +26,8 @@ public class Incapsulation {
 
     public static void main(String[] args) {
         Incapsulation ob1=new Incapsulation();
-       ob1.setAge(10);
+       ob1.getAge(10);
+       ob1.setName("Hey");
 
     }
 }

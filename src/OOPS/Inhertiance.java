@@ -32,5 +32,8 @@ class B extends A{
         ob3.showIntherit();
         ob3.showA();
         ob3.showB();
+
+
+
     }
 }

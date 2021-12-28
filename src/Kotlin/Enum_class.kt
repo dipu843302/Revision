@@ -1,10 +1,11 @@
 package Kotlin
 
 fun main(){
-val day=Day.Monday
+val day=Day.Thursday
    // println(day)
 
     day.printDay()
+    day.multi(10)
 }
 
 enum class Day(val number: Int){
@@ -14,5 +15,8 @@ enum class Day(val number: Int){
 
     fun printDay(){
         println("This is $this")
+    }
+    fun multi(a:Int){
+        println(a*a)
     }
 }
