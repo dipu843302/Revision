@@ -8,16 +8,20 @@ public class Merge_sort {
     int len;
 
     public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
-        int n=scanner.nextInt();
-        int Inputarr[]=new int[n];
-        for (int i=0;i<n;i++){
-            Inputarr[i]=scanner.nextInt();
-        }
-        Merge_sort merge_sort=new Merge_sort();
-        merge_sort.sort(Inputarr);
-        for (int i=0;i<n;i++){
-            System.out.print(Inputarr[i]+" ");
+        Scanner scanner = new Scanner(System.in);
+        int t = scanner.nextInt();
+        while (t-- > 0) {
+            int n = scanner.nextInt();
+            int Inputarr[] = new int[n];
+            for (int i = 0; i < n; i++) {
+                Inputarr[i] = scanner.nextInt();
+            }
+            Merge_sort merge_sort = new Merge_sort();
+            merge_sort.sort(Inputarr);
+            for (int i = 0; i < n; i++) {
+                System.out.print(Inputarr[i] + " ");
+            }
+            System.out.println();
         }
     }
 
@@ -29,13 +33,13 @@ public class Merge_sort {
     }
 
     private void divideArray(int lowerIndex, int HigherIndex) {
-         if (lowerIndex<HigherIndex){
+        if (lowerIndex<HigherIndex){
 
-             int middle=lowerIndex+(HigherIndex-lowerIndex)/2;
-             divideArray(lowerIndex,middle);
-             divideArray(middle+1,HigherIndex);
-             mergeArray(lowerIndex,middle,HigherIndex);
-         }
+            int middle=lowerIndex+(HigherIndex-lowerIndex)/2;
+            divideArray(lowerIndex,middle);
+            divideArray(middle+1,HigherIndex);
+            mergeArray(lowerIndex,middle,HigherIndex);
+        }
     }
 
     private void mergeArray(int lowerIndex, int middle, int higherIndex) {
