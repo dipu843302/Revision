@@ -1,11 +1,9 @@
 package InterView_Practice;
 
-        import java.util.HashMap;
-        import java.util.Map;
         import java.util.Scanner;
 
 public class All_Twice_Except_One {
-    public static void main(String[] args) {
+    public static void main(test[] args) {
         Scanner scanner=new Scanner(System.in);
         int t=scanner.nextInt();
         while (t-->0){

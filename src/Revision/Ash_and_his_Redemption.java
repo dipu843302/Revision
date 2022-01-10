@@ -1,5 +1,6 @@
 package Revision;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ash_and_his_Redemption {
@@ -17,7 +18,8 @@ public class Ash_and_his_Redemption {
             for (int i=0;i<n;i++){
                 arr2[i]=scanner.nextInt();
             }
-
+            Arrays.sort(arr);
+            Arrays.sort(arr2);
             boolean bln=true;
             for (int i=0;i<n;i++){
                 if (arr[i]>arr2[i]){

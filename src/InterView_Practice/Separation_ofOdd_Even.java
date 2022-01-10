@@ -1,10 +1,9 @@
 package InterView_Practice;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Separation_ofOdd_Even {
-    public static void main(String[] args) {
+    public static void main(test[] args) {
         Scanner  scanner=new Scanner(System.in);
         int t=scanner.nextInt();
         while (t-->0) {

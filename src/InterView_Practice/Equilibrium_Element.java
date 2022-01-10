@@ -3,7 +3,7 @@ package InterView_Practice;
 import java.util.Scanner;
 
 public class Equilibrium_Element {
-    public static void main(String[] args) {
+    public static void main(test[] args) {
         Scanner scanner=new Scanner(System.in);
         int n=scanner.nextInt();
         int arr[]=new  int[n];
